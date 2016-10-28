@@ -1,4 +1,5 @@
-<table>
+Users
+<table border="5">
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
@@ -17,6 +18,8 @@
        <td><%= link_to "DELETE", user_destroy_path(user), method: :delete, data:{
         confirm: "Are you sure?"
         } %></td>
+        <td><%= link_to "PROJECTS", user_displayIndex_path(user)%></td>
+
     </tr>
   <% end %>
 </table>

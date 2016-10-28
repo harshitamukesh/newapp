@@ -1,0 +1,24 @@
+Projects
+<table border="5">
+  <tr>
+    <th>Name</th>
+    <th>Duration</th>
+    <th>Teamsize</th>
+    <th>Cost</th>
+    <th>Domain</th>
+
+  </tr>
+ 
+  <% @project.each do |project| %>
+    <tr>
+      <td><%= project.name %></td>
+      <td><%= project.duration %></td>
+      <td><%= project.teamsize %></td>
+      <td><%= project.cost %></td>
+      <td><%= project.domain %></td>
+
+
+
+    </tr>
+  <% end %>
+</table>
